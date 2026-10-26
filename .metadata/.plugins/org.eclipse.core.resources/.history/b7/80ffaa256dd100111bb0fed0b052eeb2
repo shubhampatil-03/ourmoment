@@ -1,0 +1,5 @@
+package com.ourmoment.repository;
+
+public class InvitationRepository {
+
+}

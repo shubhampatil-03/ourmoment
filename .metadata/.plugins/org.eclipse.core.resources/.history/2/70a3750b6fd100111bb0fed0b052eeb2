@@ -1,0 +1,5 @@
+package com.ourmoment.dto;
+
+public class CreateInvitationRequest {
+
+}

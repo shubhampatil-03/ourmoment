@@ -1,0 +1,5 @@
+package com.ourmoment.service;
+
+public class InvitationService {
+
+}
