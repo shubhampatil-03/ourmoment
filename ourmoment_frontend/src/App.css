@@ -401,3 +401,185 @@ a {
     text-align: center;
   }
 }
+
+
+.auth-page {
+  min-height: 100vh;
+  padding: 35px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at top left, #fce5e8 0, transparent 38%),
+    #fffaf8;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 42px;
+  border: 1px solid #f1e1e3;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 20px 70px #ad718510;
+}
+
+.auth-brand {
+  margin-bottom: 35px;
+}
+
+.auth-card h1 {
+  margin: 15px 0 10px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.auth-description {
+  margin-bottom: 28px;
+  color: #88727c;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-form label {
+  margin-top: 9px;
+  color: #624b55;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #eadde0;
+  border-radius: 9px;
+  outline: none;
+  background: #fffdfd;
+  color: #432b35;
+  font: inherit;
+  font-size: 14px;
+}
+
+.auth-form input:focus {
+  border-color: #d9617b;
+  box-shadow: 0 0 0 3px #d9617b18;
+}
+
+.auth-submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.auth-submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.auth-switch {
+  margin-top: 25px;
+  color: #88727c;
+  font-size: 13px;
+  text-align: center;
+}
+
+.auth-switch a {
+  color: #c84e6a;
+  font-weight: 700;
+}
+
+.back-home {
+  display: block;
+  margin-top: 24px;
+  color: #9b858e;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 28px 22px;
+  }
+
+  .auth-card h1 {
+    font-size: 31px;
+  }
+}
+
+.invitation-page {
+  min-height: 100vh;
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #fff1f5, #f8e8ff);
+}
+
+.invitation-card {
+  width: 100%;
+  max-width: 560px;
+  padding: 32px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(100, 40, 70, 0.12);
+}
+
+.invitation-card h1 {
+  margin: 24px 0 8px;
+  color: #9d376b;
+}
+
+.invitation-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.invitation-card input,
+.invitation-card textarea,
+.invitation-card select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5cbd8;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.invitation-card form button,
+.share-result button {
+  padding: 13px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #bd4d83;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.invitation-card button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.share-result {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 480px) {
+  .invitation-card {
+    padding: 22px 16px;
+  }
+}
+
