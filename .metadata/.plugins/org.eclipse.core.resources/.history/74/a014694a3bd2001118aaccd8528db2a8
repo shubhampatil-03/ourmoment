@@ -1,5 +1,0 @@
-package com.ourmoment.config;
-
-public class CorsConfig {
-
-}
