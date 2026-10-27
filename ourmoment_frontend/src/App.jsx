@@ -7,6 +7,10 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import CreateInvitation from "./pages/CreateInvitation";
+import PublicInvitation from "./pages/PublicInvitation";
+import MyInvitations from "./pages/MyInvitations";
+
+
 
 
 function App() {
@@ -19,6 +23,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/create-invitation" element={<CreateInvitation/>}/>
+        <Route path="/invitation/:token" element={<PublicInvitation/>}/>
+        <Route path="/my-invitations" element={<MyInvitations />} />
       </Routes>
     </BrowserRouter>
   );

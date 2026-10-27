@@ -1,0 +1,256 @@
+
+.my-invitations-page {
+  min-height: 100vh;
+  padding: 48px 6%;
+  background: linear-gradient(135deg, #fff6f8, #fff0f5, #fffaf5);
+  font-family: Arial, sans-serif;
+  color: #633b4b;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 38px;
+}
+
+.dashboard-eyebrow {
+  color: #bc6382;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.dashboard-header h1 {
+  color: #873b59;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 5vw, 46px);
+  margin: 8px 0;
+}
+
+.dashboard-header h1 span {
+  color: #e34d79;
+}
+
+.dashboard-subtitle {
+  color: #8c6c7a;
+  line-height: 1.6;
+}
+
+.create-new-button,
+.view-invitation-button,
+.copy-link-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  border-radius: 24px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.create-new-button {
+  color: white;
+  background: #d94d78;
+  border: 1px solid #d94d78;
+}
+
+.create-new-button:hover {
+  background: #bd365f;
+  color: white;
+}
+
+.invitation-count {
+  color: #936477;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.invitation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: 22px;
+}
+
+.dashboard-invitation-card {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid #f0d3de;
+  border-radius: 19px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 28px rgba(145, 50, 85, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-invitation-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(145, 50, 85, 0.12);
+}
+
+.dashboard-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.occasion-label {
+  color: #a64d70;
+  background: #fff0f5;
+  padding: 7px 11px;
+  border-radius: 18px;
+  font-size: 12px;
+}
+
+.status-badge {
+  padding: 7px 10px;
+  border-radius: 18px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-accepted {
+  color: #176b45;
+  background: #e7f7ee;
+}
+
+.status-declined {
+  color: #a12b38;
+  background: #ffebed;
+}
+
+.status-pending {
+  color: #8a6415;
+  background: #fff5d9;
+}
+
+.dashboard-invitation-card h2 {
+  color: #843a57;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  overflow-wrap: anywhere;
+  margin-bottom: 12px;
+}
+
+.dashboard-recipient {
+  color: #856879;
+}
+
+.dashboard-recipient strong {
+  color: #66374d;
+}
+
+.dashboard-date {
+  color: #94677b;
+  font-size: 13px;
+  margin: 18px 0;
+}
+
+.dashboard-message-preview {
+  color: #795e6c;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 4.9em;
+}
+
+.dashboard-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.view-invitation-button {
+  flex: 1;
+  color: white;
+  background: #d94d78;
+  border: 1px solid #d94d78;
+}
+
+.view-invitation-button:hover {
+  background: #bd365f;
+  color: white;
+}
+
+.copy-link-button {
+  color: #a04466;
+  background: white;
+  border: 1px solid #e7bdcc;
+}
+
+.copy-link-button:hover {
+  background: #fff0f5;
+}
+
+.copy-link-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dashboard-message,
+.empty-invitations {
+  padding: 45px 20px;
+  text-align: center;
+  border: 1px solid #f0d3de;
+  border-radius: 20px;
+  background: white;
+}
+
+.dashboard-error {
+  color: #a12b38;
+}
+
+.dashboard-message button {
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 22px;
+  color: white;
+  background: #d94d78;
+  cursor: pointer;
+}
+
+.empty-heart {
+  color: #e34d79;
+  font-size: 54px;
+}
+
+.empty-invitations h2 {
+  color: #873b59;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.empty-invitations p {
+  color: #8c6c7a;
+  margin: 12px 0 24px;
+}
+
+@media (max-width: 600px) {
+  .my-invitations-page {
+    padding: 28px 16px;
+  }
+
+  .dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-header .create-new-button {
+    width: 100%;
+  }
+
+  .dashboard-invitation-card {
+    padding: 20px;
+  }
+}
+
